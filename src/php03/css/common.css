@@ -1,0 +1,51 @@
+
+
+.header {
+  background: hsl(163, 100%, 36%);
+}
+
+.header__inner {
+  margin: 0 auto;
+  padding: 20px 15px;
+  max-width: 1230px;
+  text-align: center;
+}
+
+.header__logo {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 34px;
+  
+}
+
+.header__inner {
+  margin: 0 auto;
+  padding: 20px 15px;
+  max-width: 1230px;
+}
+
+
+.next-button-wrapper {
+  display: flex;
+  justify-content: center;  /* 横方向中央揃え */
+  margin-top: 40px;         /* 上から少し余白をつける */
+}
+
+.quiz-form__button-submit {
+  padding: 32px 124px;
+  font-size: 26px;
+  background-color: hsl(163, 98%, 33%); /* 緑色 */
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  
+}
+
+.quiz-form__button-submit:hover {
+  background-color: #fe650d;  /* ホバー時の色 */
+  
+}
+

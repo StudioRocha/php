@@ -1,0 +1,107 @@
+.quiz__content {
+  margin: 0 auto;
+  padding: 10px 15px;
+  max-width: 1230px;
+ 
+}
+
+.question {
+  margin: 0 auto;
+  padding: 10px 20px;
+  width: 550px;
+  border-radius: 3px;
+  background: #0fb171;
+  text-align: center;
+  
+}
+
+.question__text {
+  color: #ffffff;
+  text-align: left;
+  font-style: bold;
+
+}
+
+.quiz-form {
+  margin: 0 auto;
+  padding-top: 20px;
+  width: 550px;
+  text-align: center;
+}
+
+.quiz-form__item {
+  margin-bottom: 30px;
+}
+
+.quiz-form__group {
+  margin-bottom: 5px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  margin-bottom: 20px; /* ← ★ここを大きくするだけで上下の余白が広がります */
+}
+
+.quiz-form__radio {
+  display: none;
+
+}
+
+.quiz-form__radio:checked+label {
+  background: #c5c5c5;
+  
+}
+
+.quiz-form__radio:checked+label {
+  background: hsl(138, 69%, 46%);
+  }
+
+  
+.quiz-form__label {
+  
+  display: block;
+  padding: 20px;
+  width: 100%;
+  cursor: pointer;
+   background: #c5c5c5;
+   font-size: 24px; /* ← ★ここを追加または拡大（例: 20px～28px） */
+   font-style: bold;
+
+  }
+
+
+/* 点滅アニメーション定義 */
+@keyframes flash {
+  0%   { background-color: #4CAF50; }
+  50%  { background-color: #2e7d32; }
+  100% { background-color: #4CAF50; }
+}
+
+/* ホバー時に点滅させる */
+.quiz-form__label:hover {
+  animation: flash 0.8s infinite;
+  color: #fff;
+}
+
+.quiz-form__label:hover {
+  background-color: hsl(28, 95%, 46%); /* 少し明るめの緑 */
+  color: white;                         /* 必要なら文字色も変更 */
+}
+
+
+.quiz-form__button {
+  width: 550px;
+}
+
+.quiz-form__button-submit:hover {
+  background-color: #ffa26d;  /* ホバー時の色 */
+  
+}
+
+
+.question__number {
+  color: #000000;
+  font-size: 58px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+  
+}

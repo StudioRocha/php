@@ -1,0 +1,115 @@
+.quiz__content {
+    color: #000000;
+    text-align: left;
+    font-style: bold;
+    font-size: 25px;
+  }
+
+    /*履歴 */
+  .history-box {
+    margin-top: 2em;
+    padding: 1.5em;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    font-family: "Segoe UI", sans-serif;
+    font-size: 18px;
+}
+  
+  
+  .history-box h3 {
+    margin-bottom: 1em;
+    font-size: 22px;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.5em;
+  }
+  
+  .history-box ul {
+    list-style: none; /* ← 黒丸を削除 */
+    padding: 0;
+    margin: 0;
+  }
+  
+  .history-box li {
+    padding: 0.5em 0;
+    border-bottom: 1px dashed #ccc;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .history-box li:last-child {
+    border-bottom: none;
+  }
+  
+  /* 正誤表 */
+
+  .result-table-box {
+    max-width: 1000px;
+    margin: 3em auto;
+    padding: 1.5em;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    font-family: "Segoe UI", sans-serif;
+  }
+  
+  .result-table-box h3 {
+    font-size: 24px;
+    color: #222;
+    text-align: center;
+    margin-bottom: 1em;
+  }
+
+  .result-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px; /* 👈 表全体の文字サイズを小さく */
+    text-align: center;
+  }
+  
+  
+.result-table thead th {
+  background-color: #f0f0f0;
+  font-weight: bold;
+  padding: 0.5em; /* 👈 ヘッダーの上下余白を圧縮 */
+  border-bottom: 1px solid #ccc;
+  font-size: 14px; /* 👈 ヘッダーだけ少し大きめでもOK */
+}
+  
+.result-table tbody td {
+    padding: 0.5em; /* 👈 各セルの余白を圧縮 */
+    border-bottom: 1px solid #eee;
+    font-size: 13px;
+  }
+  
+  
+  .result-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .result-table td:nth-child(5) {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .result-table td:nth-child(5):contains("〇") {
+    color: green;
+  }
+  
+  .result-table td:nth-child(5):contains("×") {
+    color: red;
+  }
+  
+  /* fallback: classベースでも対応したい場合 */
+  .result-table .correct {
+    color: green;
+  }
+  .result-table .incorrect {
+    color: red;
+  }
+  

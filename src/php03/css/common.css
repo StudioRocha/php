@@ -49,3 +49,8 @@
   
 }
 
+.quiz-form__button-submit:hover {
+  background-color: #fe650d;  /* ホバー時の色 */
+  
+}
+
